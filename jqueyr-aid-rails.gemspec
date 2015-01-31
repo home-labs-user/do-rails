@@ -12,8 +12,7 @@ Gem::Specification.new do |s|
 
   JQUERY_AID_REQUIREMENTS = [
     "jquery-rails",
-    "coffee-script",
-    "sass-rails"
+    "coffee-script"
   ]
 
   JQUERY_AID_REQUIREMENTS.each do |pkg|

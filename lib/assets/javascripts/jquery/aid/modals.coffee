@@ -53,14 +53,14 @@ $.fn.wideModal = ->
                 content.html reply
 
                 modal.centralizeOnScreen()
-                wrapperModal.replaceClass "transparent", "transition-opacity"
+                wrapperModal.replaceClass "transparent", "opacity-transition"
 
         else
             if format == 'html'
                 content.html reply
 
             modal.centralizeOnScreen()
-            wrapperModal.replaceClass "transparent", "transition-opacity"
+            wrapperModal.replaceClass "transparent", "opacity-transition"
 
 
 # minimize = ->
