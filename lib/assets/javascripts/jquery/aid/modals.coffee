@@ -17,11 +17,11 @@ $.fn.wideModal = ->
         .append modal
 
     modal
-        .css
-            "max-width": $(window).width()
-            "max-height": $(window).height()
-
         .append header
+
+        .css
+            "max-height": $(document).height()
+            "max-width": $(window).width()
 
     header
         .append btnClose
