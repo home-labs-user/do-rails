@@ -1,3 +1,17 @@
+HTMLElement.prototype.prepend = function(node, interval){
+    var obj = this;
+
+    setTimeout(function(){
+        obj.insertBefore(node, obj.firstChild);
+    }, interval || 0);
+
+    return this;
+}
+
+HTMLElement.prototype.parent = function(){
+    return this.parentNode;
+}
+
 NodeList.prototype.css = (attrs)->
   collection = this
   collection.each (e)->
