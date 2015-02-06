@@ -11,36 +11,6 @@ HTMLCollection.prototype.removeClass = (names, interval)->
   this
 
 
-HTMLCollection.prototype.hide = (interval)->
-  obj = this
-  setTimeout ->
-    obj.each (e)->
-      hide e
-  , interval || 0
-
-  this
-
-
-HTMLCollection.prototype.show = (interval)->
-  obj = this
-  setTimeout ->
-    obj.each (e)->
-      show e
-  , interval || 0
-
-  this
-
-
-hide = (obj)->
-  obj.css display: "none"
-
-
-show = (obj)->
-  display = obj.computedStyle "display"
-  if display == "none"
-    obj.css display: ""
-
-
 HTMLCollection.prototype.remove = (interval)->
   obj = this
   setTimeout ->
