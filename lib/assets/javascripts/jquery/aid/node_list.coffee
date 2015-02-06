@@ -1,27 +1,3 @@
-HTMLElement.prototype.prepend = function(node, interval){
-    var obj = this;
-
-    setTimeout(function(){
-        obj.insertBefore(node, obj.firstChild);
-    }, interval || 0);
-
-    return this;
-}
-
-HTMLElement.prototype.parent = function(){
-    return this.parentNode;
-}
-
-NodeList.prototype.css = (attrs)->
-  collection = this
-  collection.each (e)->
-    for i of attrs
-      if attrs.hasOwnProperty i
-        e.style[i] = attrs[i]
-
-  this
-
-
 NodeList.prototype.removeClass = (names, interval)->
   obj = $(this)
   _a = names.split(" ")
