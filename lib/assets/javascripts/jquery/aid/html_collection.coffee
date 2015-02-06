@@ -1,13 +1,3 @@
-HTMLCollection.prototype.css = (attrs)->
-  collection = this
-  collection.each (e)->
-    for i of attrs
-      if attrs.hasOwnProperty i
-        e.style[i] = attrs[i]
-
-  this
-
-
 HTMLCollection.prototype.removeClass = (names, interval)->
   obj = $(this)
   _a = names.split(" ")
