@@ -24,33 +24,4 @@ NodeList.prototype.remove = (interval)->
 remove = (obj)->
   obj.parentNode.removeChild(obj)
   this
-
-
-NodeList.prototype.hide = (interval)->
-  obj = this
-  setTimeout ->
-    obj.each (e)->
-      hide e
-  , interval || 0
-
-  this
-
-
-NodeList.prototype.show = (interval)->
-  obj = this
-  setTimeout ->
-    obj.each (e)->
-      show e
-  , interval || 0
-
-  this
-
-
-hide = (obj)->
-  obj.css display: "none"
-
-
-show = (obj)->
-  display = obj.computedStyle "display"
-  if display == "none"
-    obj.css display: ""
+  
