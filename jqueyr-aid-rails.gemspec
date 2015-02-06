@@ -1,21 +1,21 @@
 Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(File.absolute_path(p)) }
 
-require "jquery/aid/rails/version"
+require "javascript-collections/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "jquery-aid-rails"
-  s.version     = Jquery::Aid::Rails::VERSION
+  s.name        = "javascript-collections-rails"
+  s.version     = JavascriptCollections::Rails::VERSION
   s.authors     = ["rplauindo"]
   s.homepage    = "https://bitbucket.org/rplaurindo"
-  s.summary     = "Summary of jquery-aid-rails"
-  s.description = "Description of jquery-aid-rails"
+  s.summary     = "Summary of javascript-collections-rails"
+  s.description = "Description of javascript-collections-rails"
 
-  JQUERY_AID_REQUIREMENTS = [
+  JAVASVCRIPT_COLLECTIONS_REQUIREMENTS = [
     "jquery-rails",
     "coffee-script"
   ]
 
-  JQUERY_AID_REQUIREMENTS.each do |pkg|
+  JAVASCRIPT_COLLECTIONS_REQUIREMENTS.each do |pkg|
     s.add_dependency pkg
 
     # s.add_dependency "jquery-ui-rails"

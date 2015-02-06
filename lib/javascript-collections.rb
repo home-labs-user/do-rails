@@ -1,0 +1,1 @@
+require "javascript-collections/rails"
