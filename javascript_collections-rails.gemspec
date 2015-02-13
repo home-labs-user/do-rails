@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.name        = "javascript_collections-rails"
   s.version     = JavascriptCollections::Rails::VERSION
   s.authors     = ["rplauindo"]
-  s.homepage    = "https://bitbucket.org/rplaurindo"
-  s.summary     = "Summary of javascript_collections-rails"
-  s.description = "Description of javascript_collections-rails"
+  s.homepage    = "https://github.com/rplaurindo/javascript_collections-rails"
+  s.summary     = "Summary of JavascriptCollections"
+  s.description = "Description of JavascriptCollections"
 
   JAVASCRIPT_COLLECTIONS_REQUIREMENTS = [
     "jquery-rails",
