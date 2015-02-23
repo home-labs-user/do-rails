@@ -1,6 +1,7 @@
 $.fn.findByHref = (href)->
   $(this).find "a[href='#{href}']"
 
+
 $.fn.replaceClass = (sought, substitute, interval)->
     obj = $(this)
     setTimeout ->
