@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.description = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
 
   DO_REQUIREMENTS = {
-    :"jquery-rails" => '~> 0',
-    :"coffee-script" => '~> 0'
+    :"jquery-rails" => '>= 0',
+    :"coffee-script" => '>= 0'
   }
 
   DO_REQUIREMENTS.each do |p, v|
