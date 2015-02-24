@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["rplauindo"]
   s.homepage    = "https://github.com/rplaurindo/do-rails"
   s.summary     = "Summary of Do"
-  s.description = "Description of Do"
+  s.description = "It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery."
 
   DO_REQUIREMENTS = [
     "jquery-rails",
@@ -18,8 +18,6 @@ Gem::Specification.new do |s|
   DO_REQUIREMENTS.each do |pkg|
     s.add_dependency pkg
 
-    # s.add_dependency "jquery-ui-rails"
-    # s.add_runtime_dependency "rails"
   end
 
 end
