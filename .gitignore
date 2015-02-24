@@ -8,4 +8,4 @@ test/dummy/.sass-cache
 
 *~
 Gemfile.lock
-*test.rb
+*.gem

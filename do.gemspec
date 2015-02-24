@@ -6,17 +6,19 @@ Gem::Specification.new do |s|
   s.name        = "do-rails"
   s.version     = Do::Rails::VERSION
   s.authors     = ["rplauindo"]
+  s.email       = ["rafaelplaurindo@gmail.com"]
   s.homepage    = "https://github.com/rplaurindo/do-rails"
+  s.license     = "MIT"
   s.summary     = "Summary of Do"
   s.description = "It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery."
 
-  DO_REQUIREMENTS = [
-    "jquery-rails",
-    "coffee-script"
-  ]
+  DO_REQUIREMENTS = {
+    :"jquery-rails" => '~> 0',
+    :"coffee-script" => '~> 0'
+  }
 
-  DO_REQUIREMENTS.each do |pkg|
-    s.add_dependency pkg
+  DO_REQUIREMENTS.each do |p, v|
+    s.add_runtime_dependency p, v
 
   end
 
