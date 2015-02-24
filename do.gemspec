@@ -13,13 +13,12 @@ Gem::Specification.new do |s|
   s.description = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
 
   DO_REQUIREMENTS = {
-    :"jquery-rails" => '>= 0',
-    :"coffee-script" => '>= 0'
+    :"jquery-rails" => '>= 3.0.0',
+    :"coffee-rails" => '>= 3.0.0'
   }
 
   DO_REQUIREMENTS.each do |p, v|
     s.add_runtime_dependency p, v
-
   end
 
 end
