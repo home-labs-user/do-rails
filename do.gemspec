@@ -3,14 +3,18 @@ Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(Fi
 require "do/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "do-rails"
-  s.version     = Do::Rails::VERSION
-  s.authors     = ["Rafael Laurindo"]
-  s.email       = ["rafaelplaurindo@gmail.com"]
-  s.homepage    = "https://rubygems.org/gems/do-rails"
-  s.license     = "MIT"
-  s.summary     = %q{Summary of Do}
-  s.description = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
+  s.name          = "do-rails"
+  s.version       = Do::Rails::VERSION
+  s.authors       = ["Rafael Laurindo"]
+  s.email         = ["rafaelplaurindo@gmail.com"]
+  s.homepage      = "https://rubygems.org/gems/do-rails"
+  s.summary       = %q{Summary of Do}
+  s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
+  s.license       = "MIT"
+
+  s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
   DO_REQUIREMENTS = {
     :"jquery-rails" => '>= 3.0.0',
