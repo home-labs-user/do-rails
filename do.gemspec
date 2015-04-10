@@ -5,8 +5,8 @@ require "do/rails/version"
 Gem::Specification.new do |s|
   s.name          = "do-rails"
   s.version       = Do::Rails::VERSION
-  s.authors       = ["Rafael Laurindo"]
-  s.email         = ["rafaelplaurindo@gmail.com"]
+  s.authors       = ["Home Labs"]
+  s.email         = ["home-labs@outlook.com"]
   s.homepage      = "https://rubygems.org/gems/do-rails"
   s.summary       = %q{Summary of Do}
   s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
@@ -19,8 +19,7 @@ Gem::Specification.new do |s|
   # >= igual ou superior a dada versão
   # ~> entre a atual informada e uma nova versão na casa imediatamente a esquerda. Ex. ~> 0.1.1 é o mesmo que >= 0.1.1, < 0.2.0
   DO_REQUIREMENTS = {
-    :"jquery-rails" => '>= 3.0.0',
-    :"coffee-rails" => '>= 3.0.0'
+    :"jquery-rails" => '>= 3.0.0'
   }
 
   DO_REQUIREMENTS.each do |p, v|
