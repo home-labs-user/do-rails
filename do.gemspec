@@ -5,7 +5,7 @@ require "do/rails/version"
 Gem::Specification.new do |s|
   s.name          = "do-rails"
   s.version       = Do::Rails::VERSION
-  s.authors       = ["Home Labs"]
+  s.authors       = ["Rafael Laurindo"]
   s.email         = ["home-labs@outlook.com"]
   s.homepage      = "https://rubygems.org/gems/do-rails"
   s.summary       = %q{Summary of Do}
