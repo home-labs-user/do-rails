@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name          = "do-rails"
   s.version       = Do::Rails::VERSION
   # gem owner <gem name> -a <email on rubygems>
-  s.authors       = ["Rafael Laurindo"]
+  s.authors       = ["Home Labs"]
   s.email         = ["home-labs@outlook.com"]
   s.homepage      = "https://rubygems.org/gems/do-rails"
   s.summary       = %q{Summary of Do}
