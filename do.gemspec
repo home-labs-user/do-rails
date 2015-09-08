@@ -19,12 +19,7 @@ Gem::Specification.new do |s|
 
   # >= igual ou superior a dada versão
   # ~> entre a atual informada e uma nova versão na casa imediatamente a esquerda. Ex. ~> 0.1.1 é o mesmo que >= 0.1.1, < 0.2.0
-  DO_REQUIREMENTS = {
-    :"jquery-rails" => '>= 3.0.0'
-  }
 
-  DO_REQUIREMENTS.each do |p, v|
-    s.add_runtime_dependency p, v
-  end
+  s.add_runtime_dependency 'do-rails', '~> 0.0.10', '>= 0.0.10'
 
 end
