@@ -17,9 +17,4 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # >= igual ou superior a dada versão
-  # ~> entre a atual informada e uma nova versão na casa imediatamente a esquerda. Ex. ~> 0.1.1 é o mesmo que >= 0.1.1, < 0.2.0
-
-  s.add_runtime_dependency 'do-rails', '~> 0.0.10', '>= 0.0.10'
-
 end
