@@ -3,7 +3,7 @@ Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(Fi
 require "do/rails/version"
 
 Gem::Specification.new do |s|
-  s.name          = "do-rails"
+  s.name          = "do_rails"
   s.version       = Do::Rails::VERSION
   # gem owner <gem name> -a <email on rubygems>
   s.authors       = ["home-labs"]
@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'jquery-rails', '>= 3.0.0'
+  s.add_runtime_dependency 'jquery-rails', '~> 4.0.0', '>= 4.0.5'
 
 end
