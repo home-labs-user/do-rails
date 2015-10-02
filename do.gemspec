@@ -3,19 +3,17 @@ Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(Fi
 require "do/rails/version"
 
 Gem::Specification.new do |s|
-  s.name          = "do_rails"
+  s.name          = "do-rails"
   s.version       = Do::Rails::VERSION
   # gem owner <gem name> -a <email on rubygems>
   s.authors       = ["home-labs"]
   s.email         = ["home-labs@outlook.com"]
-  s.homepage      = "https://rubygems.org/gems/do_rails"
+  s.homepage      = "https://rubygems.org/gems/do-rails"
   s.summary       = %q{Summary of Do}
   s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
   s.license       = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do.gemspec"]
   s.require_paths = ["lib", "config"]
-
-  s.add_runtime_dependency 'jquery-rails', '~> 4.0.0', '>= 4.0.5'
 
 end
