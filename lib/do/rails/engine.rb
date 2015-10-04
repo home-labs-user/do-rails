@@ -2,7 +2,6 @@ module Do
   module Rails
 
     class Engine < ::Rails::Engine
-      # isolate_namespace Do::Rails
 
       # config.before_initialize do
         # << faz push no array paths com uma string informada
