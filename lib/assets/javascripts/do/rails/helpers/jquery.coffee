@@ -1,4 +1,4 @@
-$.fn.findByHref = (href)->
+$.fn.findAnchorByHref = (href)->
   $(this).find "a[href='#{href}']"
 
 
