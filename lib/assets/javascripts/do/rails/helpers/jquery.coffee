@@ -6,20 +6,17 @@ $.fn.findAnchorByHref = (href)->
 
 
 $.fn.replaceToggleClass = (cls1, cls2)->
-  obj = $(this)
+  self = $(this)
 
-  obj.each (i)->
-    current = obj.item(i)
-    if current.classList.contains(cls1)
-      $(current).removeClass cls1
-      $(current).addClass cls2
-    else if current.classList.contains(cls2)
-      $(current).removeClass cls2
-      $(current).addClass cls1
+  if self.get(0).classList.contains(cls1)
+    # os métodos próprios do jquery mantém o controle da visibilidade e existência
+    self.removeClass cls1
+    self.addClass cls2
+  else if self.get(0).classList.contains(cls2)
+    self.removeClass cls2
+    self.addClass cls1
 
-  # setTimeout ->, interval || 0
-
-  obj
+  self
 
 $.fn.replaceClass = (sought, substitute, interval)->
   obj = $(this)
@@ -57,3 +54,4 @@ $.fn.extend
   item: (index)->
     obj = $(this)
     obj.get index
+
