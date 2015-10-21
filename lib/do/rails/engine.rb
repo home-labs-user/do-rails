@@ -2,14 +2,16 @@ module Do
   module Rails
 
     class Engine < ::Rails::Engine
+      # isolate_namespace Do::Rails
 
-      # config.before_initialize do
-        # << faz push no array paths com uma string informada
-        #Dir["./"].each { |p| Rails.application.config.assets.paths << p }
-        # Se for o caso, usar: root.join("lib/assets/javascripts")
+      # */ apenas o diretório
+      # **/ diretório e subdiretórios
+      # Dir[File.join(File.expand_path("../../../", __FILE__), "assets/*/")].each do |path|
+      #   config.assets.paths << File.absolute_path(path) unless config.assets.include? File.absolute_path(path)
       # end
+      # p config.assets.paths
+      # http://stackoverflow.com/questions/28499923/how-can-i-add-autoload-paths-in-my-rails4-engine
 
-      # verificar se é necessário
       # ActiveSupport.on_load(:action_view) do
       #   include IntranetCore::Helper
       # end
