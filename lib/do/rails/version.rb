@@ -1,5 +1,5 @@
 module Do
   module Rails
-    VERSION = "0.1.19"
+    VERSION = "0.1.22"
   end
 end
