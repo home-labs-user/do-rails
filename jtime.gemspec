@@ -1,14 +1,14 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "do/rails/version"
+require "jtime/rails/version"
 
 Gem::Specification.new do |s|
-  s.name          = "do-rails"
+  s.name          = "jtime-rails"
   s.version       = Do::Rails::VERSION
   s.authors       = ["Home Labs"]
   s.email         = ["home-labs@outlook.com"]
-  s.homepage      = "https://rubygems.org/gems/do-rails"
-  s.summary       = %q{Summary of Do}
+  s.homepage      = "https://rubygems.org/gems/jtime-rails"
+  s.summary       = %q{Summary of jTime}
   s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
   s.license       = "MIT"
   s.test_files = Dir["test/**/*"]
