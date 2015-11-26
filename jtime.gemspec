@@ -4,7 +4,7 @@ require "jtime/rails/version"
 
 Gem::Specification.new do |s|
   s.name          = "jtime-rails"
-  s.version       = Do::Rails::VERSION
+  s.version       = JTime::Rails::VERSION
   s.authors       = ["Home Labs"]
   s.email         = ["home-labs@outlook.com"]
   s.homepage      = "https://rubygems.org/gems/jtime-rails"

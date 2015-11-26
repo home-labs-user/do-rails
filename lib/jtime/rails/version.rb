@@ -1,5 +1,5 @@
-module JTIME
+module JTime
   module Rails
-    VERSION = "0.1.22"
+    VERSION = "0.0.1.alpha"
   end
 end
