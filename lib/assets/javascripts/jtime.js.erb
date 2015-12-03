@@ -1,0 +1,12 @@
+(function () {
+    // verifica se window já mapeia requireJS
+    if (!window["requireJS"]) {
+        var
+            head = document.querySelector("head");
+        head.append(<%= "\'#{javascript_include_tag('require_js')}\'" %>);
+    }
+})();
+
+requireJS.loadPath("jtime");
+
+requireJS("1jtime");
