@@ -1,12 +1,21 @@
 (function () {
+
     // verifica se window já mapeia requireJS
     if (!window["requireJS"]) {
         var
-            head = document.querySelector("head");
-        head.append(<%= "\'#{javascript_include_tag('require_js')}\'" %>);
+            script = document.createElement("script")
+            tag = <%= "\'#{javascript_include_tag('require_js')}\'" %>;
+
+        script.src = tag
+            .match(/(src=[\"\'])([\/\w])+(\.js)?/gi)[0]
+                .replace(/(src=)|([\"\']*)/g, "");
+
+        document.head.appendChild(script);
     }
+
 })();
 
-requireJS.loadPath("jtime");
-
-require("jtime/jtime");
+window.onload = function () {
+    requireJS.loadPath("jtime");
+    require("jtime");
+}
