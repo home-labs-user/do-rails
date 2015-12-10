@@ -1,0 +1,23 @@
+(function () {
+    "use strict";
+
+    var
+        tag = <%= "\'#{javascript_include_tag('jtime/require')}\'" %>,
+        src,
+        script;
+
+    src = tag
+        .match(/(src=[\"\'])([\/\w])+(\.js)?/gi)[0]
+            .replace(/(src=)|([\"\']*)/g, "");
+
+    script = document.querySelector("head script[src=\"" + src + "\"]");
+
+    if (!script) {
+        // window.onload = function () {};
+        script = document.createElement("script");
+        script.src = src;
+        document.head.appendChild(script);
+        // document.writeln(tag);
+    }
+
+})();
