@@ -1,4 +1,4 @@
-module JTime
+module ESphinx
   module Rails
     VERSION = "0.0.1.alpha"
   end
