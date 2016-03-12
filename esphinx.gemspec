@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "esphinx.gemspec"]
   s.require_paths = %w{bin lib}
 
-  s.add_dependency 'jquery-rails', "~> 3"
   # s.add_dependency 'esphinx-loader-rails', '~> 0.0'
 
 end
