@@ -13,9 +13,8 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
   s.test_files = Dir["test/**/*"]
 
-  # s.files = Dir["{bin,#{File.expand_path("../lib", __FILE__)}}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do.gemspec"]
-  s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "esphinx.gemspec"]
-  s.require_paths = %w{bin lib}
+  s.files = Dir["{bin,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "esphinx.gemspec"]
+  s.require_paths = %w{bin lib vendor}
 
   # s.add_dependency 'esphinx-loader-rails', '~> 0.0'
 
