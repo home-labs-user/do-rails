@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email         = ["home-labs@outlook.com"]
   s.homepage      = "https://rubygems.org/gems/esphinx-rails"
   s.summary       = %q{Summary of ESphinx}
-  s.description   = %q{A simple and light lib for abstracts some things of the DOM.}
+  s.description   = %q{Simple abstractions to JS.}
   s.license       = "MIT"
   s.test_files = Dir["test/**/*"]
 
