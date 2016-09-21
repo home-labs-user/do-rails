@@ -4,5 +4,4 @@
 # Configs to Production
 
 # precompilation on deploy. Basicaly, must be precompile the assets that contains "//= require_tree .", that mount all files in one.
-Rails.application.config.assets.precompile += %w( esphinx.css esphinx.js )
-Rails.application.config.assets.version = '1.0'
+Rails.application.config.assets.precompile += %w( esphinx.js )
