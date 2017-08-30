@@ -1,5 +1,5 @@
 module ESphinx
   module Rails
-    VERSION = "0.5.1"
+    VERSION = "1.0.0"
   end
 end
