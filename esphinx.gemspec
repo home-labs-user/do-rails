@@ -16,6 +16,4 @@ Gem::Specification.new do |s|
   s.files = Dir["{bin,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.require_paths = %w{lib vendor}
 
-  # s.add_dependency 'esphinx-loader-rails', '~> 0.0'
-
 end
